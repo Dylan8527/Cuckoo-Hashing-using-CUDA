@@ -1,0 +1,10 @@
+cmake_minimum_required(VERSION 3.21)
+project(cuckoo-hashing LANGUAGES CXX CUDA)
+set(CMAKE_CUDA_SEPARABLE_COMPILATION ON)
+if(NOT DEFINED CMAKE_CUDA_ARCHITECTURES)
+    set(CMAKE_CUDA_ARCHITECTURES 86)
+endif()
+find_package(OpenMP REQUIRED)
+add_subdirectory(src)
+# Borrowed from website[https://github.com/xehoth/cuda-cuckoo-hashing/tree/main/tests]
+add_subdirectory(tests)

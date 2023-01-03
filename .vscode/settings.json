@@ -1,0 +1,13 @@
+{
+    "files.associations": {
+        "xhash": "cpp",
+        "cmath": "cpp",
+        "ios": "cpp",
+        "istream": "cpp",
+        "ostream": "cpp",
+        "xstring": "cpp",
+        "xutility": "cpp",
+        "random": "cpp",
+        "cstdlib": "cpp"
+    }
+}
